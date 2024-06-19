@@ -1,6 +1,0 @@
-@ArchitectureScratch.HttpClients_HostAddress = http://localhost:50002
-
-GET {{ArchitectureScratch.HttpClients_HostAddress}}/api/v1/TestHttpClient
-Accept: application/json
-
-###

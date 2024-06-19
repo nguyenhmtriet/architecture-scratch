@@ -1,6 +1,6 @@
-﻿using ArchitectureScratch.HttpClients.ApiClients.LoggingApi.Models;
+﻿using ArchitectureScratch.NSwagHttpClients.ApiClients.LoggingApi.Models;
 
-namespace ArchitectureScratch.HttpClients.ApiClients;
+namespace ArchitectureScratch.NSwagHttpClients.ApiClients;
 
 public interface ILoggingApiClientFacade
 {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ArchitectureScratch.HttpClients.Configuration;
+namespace ArchitectureScratch.NSwagHttpClients.Configuration;
 
 public class ApiClientConfiguration
 {

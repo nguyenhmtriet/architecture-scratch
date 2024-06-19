@@ -1,8 +1,8 @@
-﻿using ArchitectureScratch.HttpClients.ApiClients.LoggingApi.Generated;
-using ArchitectureScratch.HttpClients.ApiClients.LoggingApi.Models;
+﻿using ArchitectureScratch.NSwagHttpClients.ApiClients.LoggingApi.Generated;
+using ArchitectureScratch.NSwagHttpClients.ApiClients.LoggingApi.Models;
 using DateOnly = System.DateOnly;
 
-namespace ArchitectureScratch.HttpClients.ApiClients.LoggingApi;
+namespace ArchitectureScratch.NSwagHttpClients.ApiClients.LoggingApi;
 
 internal class LoggingApiClientFacade(LoggingApiClient loggingApiClient) : ILoggingApiClientFacade
 {

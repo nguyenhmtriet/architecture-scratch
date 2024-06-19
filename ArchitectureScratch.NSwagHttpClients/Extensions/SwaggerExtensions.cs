@@ -1,7 +1,7 @@
 ﻿using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace ArchitectureScratch.HttpClients.Extensions;
+namespace ArchitectureScratch.NSwagHttpClients.Extensions;
 
 public static class SwaggerExtensions
 {

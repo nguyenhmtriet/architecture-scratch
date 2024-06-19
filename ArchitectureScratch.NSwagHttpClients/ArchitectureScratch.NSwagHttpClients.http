@@ -1,0 +1,6 @@
+@ArchitectureScratch.NSwagHttpClients_HostAddress = http://localhost:50002
+
+GET {{ArchitectureScratch.NSwagHttpClients_HostAddress}}/api/v1/TestHttpClient
+Accept: application/json
+
+###

@@ -1,10 +1,10 @@
-﻿using ArchitectureScratch.HttpClients.ApiClients;
-using ArchitectureScratch.HttpClients.ApiClients.LoggingApi;
-using ArchitectureScratch.HttpClients.ApiClients.LoggingApi.Generated;
-using ArchitectureScratch.HttpClients.Configuration;
+﻿using ArchitectureScratch.NSwagHttpClients.ApiClients;
+using ArchitectureScratch.NSwagHttpClients.ApiClients.LoggingApi;
+using ArchitectureScratch.NSwagHttpClients.ApiClients.LoggingApi.Generated;
+using ArchitectureScratch.NSwagHttpClients.Configuration;
 using Microsoft.Extensions.Options;
 
-namespace ArchitectureScratch.HttpClients.Extensions;
+namespace ArchitectureScratch.NSwagHttpClients.Extensions;
 
 public static class HttpClientExtensions
 {

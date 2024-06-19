@@ -1,5 +1,5 @@
-using ArchitectureScratch.HttpClients.Configuration;
-using ArchitectureScratch.HttpClients.Extensions;
+using ArchitectureScratch.NSwagHttpClients.Configuration;
+using ArchitectureScratch.NSwagHttpClients.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

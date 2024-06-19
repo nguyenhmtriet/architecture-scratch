@@ -1,4 +1,4 @@
-﻿namespace ArchitectureScratch.HttpClients.ApiClients.LoggingApi.Models;
+﻿namespace ArchitectureScratch.NSwagHttpClients.ApiClients.LoggingApi.Models;
 
 public record WeatherForecastResult
 {

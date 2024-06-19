@@ -4,8 +4,13 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>ArchitectureScratch.HttpClients</RootNamespace>
+        <RootNamespace>ArchitectureScratch.NSwagHttpClients</RootNamespace>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <Content Remove="ApiClients/LoggingApi/**/*.json" CopyToOutputDirectory="Never" CopyToPublishDirectory="Never" />
+        <Compile Remove="ApiClients/LoggingApi/**/*.json" />
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6"/>

@@ -1,8 +1,8 @@
-﻿using ArchitectureScratch.HttpClients.ApiClients;
-using ArchitectureScratch.HttpClients.ApiClients.LoggingApi.Models;
+﻿using ArchitectureScratch.NSwagHttpClients.ApiClients;
+using ArchitectureScratch.NSwagHttpClients.ApiClients.LoggingApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ArchitectureScratch.HttpClients.Controllers;
+namespace ArchitectureScratch.NSwagHttpClients.Controllers;
 
 [ApiController]
 [Route("api/v1/[controller]")]

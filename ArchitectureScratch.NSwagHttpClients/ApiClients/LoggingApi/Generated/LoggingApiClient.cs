@@ -4,7 +4,7 @@
 // </auto-generated>
 //----------------------
 
-using ArchitectureScratch.HttpClients.ApiClients.LoggingApi.Generated;
+using ArchitectureScratch.NSwagHttpClients.ApiClients.LoggingApi.Generated;
 
 #pragma warning disable 108 // Disable "CS0108 '{derivedDto}.ToJson()' hides inherited member '{dtoBase}.ToJson()'. Use the new keyword if hiding was intended."
 #pragma warning disable 114 // Disable "CS0114 '{derivedDto}.RaisePropertyChanged(String)' hides inherited member 'dtoBase.RaisePropertyChanged(String)'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword."
@@ -19,7 +19,7 @@ using ArchitectureScratch.HttpClients.ApiClients.LoggingApi.Generated;
 #pragma warning disable 8625 // Disable "CS8625 Cannot convert null literal to non-nullable reference type"
 #pragma warning disable CS8765 // Nullability of type of parameter doesn't match overridden member (possibly because of nullability attributes).
 
-namespace ArchitectureScratch.HttpClients.ApiClients.LoggingApi.Generated
+namespace ArchitectureScratch.NSwagHttpClients.ApiClients.LoggingApi.Generated
 {
     using System = global::System;
 
