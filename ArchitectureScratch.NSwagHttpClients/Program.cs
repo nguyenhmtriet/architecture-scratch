@@ -1,6 +1,5 @@
-using Logging.Extensions;
-using Logging.Services;
-using Microsoft.AspNetCore.Http.HttpResults;
+using ArchitectureScratch.HttpClients.Configuration;
+using ArchitectureScratch.HttpClients.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,10 +8,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
 
-builder.Services
-    .AddScoped<AlwaysLogAsMessageTemplate>()
-    .ConfigureSerilog()
-    .ConfigureSwagger();
+builder.Services.AddOptions<HttpClientsConfiguration>()
+    .Bind(builder.Configuration.GetSection("HttpClients"))
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
+
+builder.Services.ConfigureSwagger();
+builder.Services.ConfigureHttpClientApis();
 
 
 var app = builder.Build();
