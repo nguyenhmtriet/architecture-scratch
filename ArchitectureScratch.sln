@@ -1,8 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureScratch.Logging", "ArchitectureScratch.Logging\ArchitectureScratch.Logging.csproj", "{B0982568-198A-4741-8271-F32431BC586D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{5349B97F-6316-4C4B-961D-795DDEF57704}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureScratch.NSwagHttpClients", "ArchitectureScratch.NSwagHttpClients\ArchitectureScratch.NSwagHttpClients.csproj", "{517360EF-F22D-4F72-A885-717CB3990B23}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B01B4C20-1C4B-45F1-AEA5-0FBFE84E25CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureScratch.Logging", "src\ArchitectureScratch.Logging\ArchitectureScratch.Logging.csproj", "{9FD19212-26CB-4394-8383-31851EAB406F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureScratch.NSwagHttpClients", "src\ArchitectureScratch.NSwagHttpClients\ArchitectureScratch.NSwagHttpClients.csproj", "{C30FE1D2-4287-471B-9B2B-F827ACD8A78F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureScratch.RateLimiters", "src\ArchitectureScratch.RateLimiters\ArchitectureScratch.RateLimiters.csproj", "{D67AED99-84A4-475F-B894-2CDF895466F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureScratch.Shared", "src\ArchitectureScratch.Shared\ArchitectureScratch.Shared.csproj", "{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,13 +18,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B0982568-198A-4741-8271-F32431BC586D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0982568-198A-4741-8271-F32431BC586D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0982568-198A-4741-8271-F32431BC586D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0982568-198A-4741-8271-F32431BC586D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{517360EF-F22D-4F72-A885-717CB3990B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{517360EF-F22D-4F72-A885-717CB3990B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{517360EF-F22D-4F72-A885-717CB3990B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{517360EF-F22D-4F72-A885-717CB3990B23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD19212-26CB-4394-8383-31851EAB406F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD19212-26CB-4394-8383-31851EAB406F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD19212-26CB-4394-8383-31851EAB406F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD19212-26CB-4394-8383-31851EAB406F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C30FE1D2-4287-471B-9B2B-F827ACD8A78F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C30FE1D2-4287-471B-9B2B-F827ACD8A78F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C30FE1D2-4287-471B-9B2B-F827ACD8A78F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C30FE1D2-4287-471B-9B2B-F827ACD8A78F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D67AED99-84A4-475F-B894-2CDF895466F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D67AED99-84A4-475F-B894-2CDF895466F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D67AED99-84A4-475F-B894-2CDF895466F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D67AED99-84A4-475F-B894-2CDF895466F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9FD19212-26CB-4394-8383-31851EAB406F} = {B01B4C20-1C4B-45F1-AEA5-0FBFE84E25CD}
+		{C30FE1D2-4287-471B-9B2B-F827ACD8A78F} = {B01B4C20-1C4B-45F1-AEA5-0FBFE84E25CD}
+		{D67AED99-84A4-475F-B894-2CDF895466F4} = {B01B4C20-1C4B-45F1-AEA5-0FBFE84E25CD}
+		{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4} = {5349B97F-6316-4C4B-961D-795DDEF57704}
 	EndGlobalSection
 EndGlobal

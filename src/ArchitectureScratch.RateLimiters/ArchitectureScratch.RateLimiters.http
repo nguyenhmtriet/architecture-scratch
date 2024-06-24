@@ -1,0 +1,24 @@
+@ArchitectureScratch.RateLimiters_HostAddress = http://localhost:50003
+
+GET {{ArchitectureScratch.RateLimiters_HostAddress}}/
+Accept: application/json
+###
+GET {{ArchitectureScratch.RateLimiters_HostAddress}}/
+Accept: application/json
+
+###
+
+GET {{ArchitectureScratch.RateLimiters_HostAddress}}/
+Accept: application/json
+###
+
+GET {{ArchitectureScratch.RateLimiters_HostAddress}}/
+Accept: application/json
+###
+
+GET {{ArchitectureScratch.RateLimiters_HostAddress}}/
+Accept: application/json
+###
+
+GET {{ArchitectureScratch.RateLimiters_HostAddress}}/
+Accept: application/json

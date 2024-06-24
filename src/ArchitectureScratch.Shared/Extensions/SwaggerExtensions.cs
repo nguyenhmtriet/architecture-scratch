@@ -1,11 +1,12 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace ArchitectureScratch.NSwagHttpClients.Extensions;
+namespace ArchitectureScratch.Shared.Extensions;
 
 public static class SwaggerExtensions
 {
-    public static IServiceCollection ConfigureSwagger(this IServiceCollection services)
+    public static IServiceCollection ConfigureSwaggerGen(this IServiceCollection services)
     {
         services.AddSwaggerGen(swaggerGenOptions =>
         {

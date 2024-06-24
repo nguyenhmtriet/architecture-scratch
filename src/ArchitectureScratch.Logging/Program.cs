@@ -1,5 +1,6 @@
-using ArchitectureScratch.NSwagHttpClients.Configuration;
-using ArchitectureScratch.NSwagHttpClients.Extensions;
+using Logging.Extensions;
+using Logging.Services;
+using ArchitectureScratch.Shared.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,13 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
 
-builder.Services.AddOptions<HttpClientsConfiguration>()
-    .Bind(builder.Configuration.GetSection("HttpClients"))
-    .ValidateDataAnnotations()
-    .ValidateOnStart();
-
-builder.Services.ConfigureSwagger();
-builder.Services.ConfigureHttpClientApis();
+builder.Services
+    .AddScoped<AlwaysLogAsMessageTemplate>()
+    .ConfigureSerilog()
+    .ConfigureSwaggerGen();
 
 
 var app = builder.Build();
