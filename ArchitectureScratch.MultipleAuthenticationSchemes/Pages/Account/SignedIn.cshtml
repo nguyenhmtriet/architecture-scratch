@@ -1,0 +1,6 @@
+﻿@page "/account/signed-in"
+@model ArchitectureScratch.MultipleAuthenticationSchemes.Pages.Account.SignedIn
+
+<div id="signed-in-container" class="p-3 pb-md-4 mx-auto text-center fs-5">
+  @(Model.IsAuthenticated ? "Signed in" : "Authentication failed")
+</div>

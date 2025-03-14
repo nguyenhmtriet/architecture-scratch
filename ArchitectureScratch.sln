@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureScratch.RateLim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureScratch.Shared", "src\ArchitectureScratch.Shared\ArchitectureScratch.Shared.csproj", "{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureScratch.MultipleAuthenticationSchemes", "ArchitectureScratch.MultipleAuthenticationSchemes\ArchitectureScratch.MultipleAuthenticationSchemes.csproj", "{0ED77BF0-94B6-4B14-B1F0-EB2929FEA393}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,11 +36,16 @@ Global
 		{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED77BF0-94B6-4B14-B1F0-EB2929FEA393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED77BF0-94B6-4B14-B1F0-EB2929FEA393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED77BF0-94B6-4B14-B1F0-EB2929FEA393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED77BF0-94B6-4B14-B1F0-EB2929FEA393}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9FD19212-26CB-4394-8383-31851EAB406F} = {B01B4C20-1C4B-45F1-AEA5-0FBFE84E25CD}
 		{C30FE1D2-4287-471B-9B2B-F827ACD8A78F} = {B01B4C20-1C4B-45F1-AEA5-0FBFE84E25CD}
 		{D67AED99-84A4-475F-B894-2CDF895466F4} = {B01B4C20-1C4B-45F1-AEA5-0FBFE84E25CD}
 		{245B6A1C-FA98-4A3B-B404-2D2DB0E735A4} = {5349B97F-6316-4C4B-961D-795DDEF57704}
+		{0ED77BF0-94B6-4B14-B1F0-EB2929FEA393} = {B01B4C20-1C4B-45F1-AEA5-0FBFE84E25CD}
 	EndGlobalSection
 EndGlobal

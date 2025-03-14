@@ -1,0 +1,26 @@
+﻿@page "/"
+@model ArchitectureScratch.MultipleAuthenticationSchemes.Pages.Index.Index
+
+@section Scripts {
+  <script>
+    window.onload = function () {
+      const hashKeyValuePairs = window.location.hash.substring(1); // Remove the '#' character
+
+      if (!hashKeyValuePairs) {
+        return;
+      }
+
+      const keyValuePairs = hashKeyValuePairs.split('&').reduce((acc, curr, i, arr) => {
+        const [key, value] = curr.split('=');
+        acc[key] = value;
+        return acc;
+      }, {});
+
+      if (!keyValuePairs['access_token']) {
+        return;
+      }
+
+      window.location.href = '@Model.SelfUrl' + '/account/signin?' + hashKeyValuePairs;
+    };
+  </script>
+}

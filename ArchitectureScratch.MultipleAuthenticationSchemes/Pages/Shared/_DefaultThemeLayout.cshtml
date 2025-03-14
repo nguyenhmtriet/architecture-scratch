@@ -1,0 +1,14 @@
+﻿@{
+  Layout = "_RootLayout.cshtml";
+}
+
+<div class="container py-3">
+  <partial name="_Header"/>
+
+  @RenderBody()
+
+  <partial name="_Footer"/>
+
+  @await RenderSectionAsync("Styles", required: false)
+  @await RenderSectionAsync("Scripts", required: false)
+</div>
